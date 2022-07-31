@@ -4,7 +4,8 @@ First of all this REST API app is about to allow users to create and maintain cu
 ## Start app  
 First we open two terminals.  
 ### First terminal
-Write a command `docker-compose up` which connects us to the Postgres database.
+Write a command `npm i` to install packages and then
+write a command `docker-compose up` which connects us to the Postgres database.
 ### Second terminal
 Write a command `npm run start` which connects us to the http://localhost:3000 server.
 ## Application functionality 
