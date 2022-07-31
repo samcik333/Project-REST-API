@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "ts-node",
-    "serve": "ts-node --swc src/server.ts",
+    "serve": "ts-node src/server.ts",
     "start": "nodemon -L",
     "test-init": "./node_modules/jasmine/bin/jasmine.js init",
     "test": "ts-node ./node_modules/jasmine/bin/jasmine.js"
