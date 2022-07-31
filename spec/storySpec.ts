@@ -29,7 +29,7 @@ describe("Test Collection Logic", async () => {
             token: token1
         })
     })
-    beforeEach(async()=>{
+    beforeEach(async () => {
         const userId = await User.query().where("email", user1.email)
         const collId = await Collection.query().where("name", coll1.name)
         await req.post(`/users/${userId[0].id}/collections/${collId[0].id}/stories/7608`).send({
@@ -39,8 +39,9 @@ describe("Test Collection Logic", async () => {
             token: token1
         })
     })
-    afterEach(async()=>{
+    afterEach(async () => {
         await Story.query().findById(7608).delete()
+        await Story.query().findById(1).delete()
     })
     afterAll(async () => {
         const userId1 = await User.query().where('email', user1.email)
@@ -72,15 +73,5 @@ describe("Test Collection Logic", async () => {
             token: token1
         })
         expect(res.body.id).toBe(1)
-    })
-    describe("Test comments of story",async () => {
-        it("GET /users/:userid/stories/:storyid/comments Should get comments of story",async () => {
-            const userId = await User.query().where("email", user1.email)
-            const collId = await Collection.query().where("name", coll1.name)
-            const res = await req.get(`/users/${userId[0].id}/stories/7608/comments`).send({
-                token: token1
-            })
-            expect(res.body.length).toBe(20)
-        })
     })
 })
