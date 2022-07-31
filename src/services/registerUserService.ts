@@ -1,4 +1,4 @@
-import User from "../Models/User"
+import User from "../models/User"
 import createToken from "./createTokenService"
 import cryptPassword from "./cryptPassService"
 

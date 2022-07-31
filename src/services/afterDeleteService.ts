@@ -1,6 +1,6 @@
-import Collection from "../Models/Collection"
-import Story from "../Models/Story"
-import User from "../Models/User"
+import Collection from "../models/Collection"
+import Story from "../models/Story"
+import User from "../models/User"
 
 export const beforeDeleteFindStories = async (ctx: any) => {
     const collectons = await Collection.relatedQuery('stories').for(ctx.params.collid)

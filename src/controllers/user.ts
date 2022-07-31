@@ -1,5 +1,5 @@
-import Collection from "../Models/Collection"
-import User from "../Models/User"
+import Collection from "../models/Collection"
+import User from "../models/User"
 import { deleteOneUser } from "../services/deleteService"
 import { beforeDeleteFindStories,beforUserDeleteFindStories, checkIfDeleteStory } from "../services/afterDeleteService"
 import { findAllUsers, findOneUser } from "../services/findService"

@@ -1,4 +1,4 @@
-import User from "../Models/User";
+import User from "../models/User";
 
 export default async function createCollection(name: any, id: any) {
         const userId = parseInt(id);

@@ -1,6 +1,6 @@
-import Collection from "../Models/Collection"
-import Story from "../Models/Story"
-import User from "../Models/User"
+import Collection from "../models/Collection"
+import Story from "../models/Story"
+import User from "../models/User"
 
 export async function findUserByEmail(email: string) {
     return await User.query().findOne({ email })

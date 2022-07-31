@@ -1,5 +1,5 @@
-import Collection from "../Models/Collection";
-import User from "../Models/User";
+import Collection from "../models/Collection";
+import User from "../models/User";
 import cryptPassword from "./cryptPassService";
 
 export async function updateOneUser(email: string, password: string, id: number) {

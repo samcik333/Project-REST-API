@@ -1,6 +1,6 @@
 import supertest from "supertest";
-import Collection from "../src/Models/Collection";
-import User from "../src/Models/User";
+import Collection from "../src/models/Collection";
+import User from "../src/models/User";
 import { server } from "../src/server";
 import { deleteOneUser } from "../src/services/deleteService";
 

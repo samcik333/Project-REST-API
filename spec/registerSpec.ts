@@ -1,6 +1,6 @@
 import { Request } from "node-fetch";
 import supertest from "supertest";
-import User from "../src/Models/User";
+import User from "../src/models/User";
 import { server } from "../src/server";
 import { deleteOneUser } from "../src/services/deleteService";
 

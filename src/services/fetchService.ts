@@ -1,7 +1,7 @@
 import fetch from "node-fetch"
-import Collection from "../Models/Collection"
-import Comment from "../Models/Comment"
-import Story from "../Models/Story"
+import Collection from "../models/Collection"
+import Comment from "../models/Comment"
+import Story from "../models/Story"
 async function fetchService(storyid: any) {
     return await (await fetch(`https://hacker-news.firebaseio.com/v0/item/${storyid}.json`)).json()
 }
