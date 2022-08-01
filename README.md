@@ -52,3 +52,5 @@ This request returns endpoint of comments on stories.
 This request finds an existing comment in the database and gets us an endpoint with its information.
 # Tests
 We can find tests in folder ./spec and we started test by command `npm test`.
+
+### Example of storiesid: 1, 7608, 8863
